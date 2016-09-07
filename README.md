@@ -1,5 +1,5 @@
 ### bezier-curve
 
-![demo](https://i.gyazo.com/eac7f99f05797b7afd362dd0566e8096.gif)  
+![demo](https://i.gyazo.com/7f8a628092ae5fc91fd2027a94711796.gif)  
 The program uses [De Casteljau's algorithm](https://en.wikipedia.org/wiki/De_Casteljau%27s_algorithm) to create bezier curves for data streams.  
 
