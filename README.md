@@ -14,3 +14,4 @@ function drawCurve(points[], t):
       newpoints[i] = (1-t) * points[i] + t * points[i+1]
     drawCurve(newpoints, t)
 ```
+From [here](https://pomax.github.io/bezierinfo/#decasteljau).
