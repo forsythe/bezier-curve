@@ -5,13 +5,11 @@ class FixedQueue {
   FixedQueue(int size) {
     arr = new Point[size];
     for (int k = 0; k < arr.length; k++)
-      arr[k] = new Point(0, 800);
+      arr[k] = new Point();
   }
 
   void write(Point n) {
-
     arr[index++] = n;
-
     if (index >= arr.length) 
       index = 0;
   }
@@ -28,13 +26,10 @@ class FixedQueue {
   Point[] getOrderedArr() {
     Point[] ans = new Point[arr.length];
     int ansPos = 0;
-
-    for (int k = index-1; k >= 0; k--) {
+    for (int k = index-1; k >= 0; k--)
       ans[ansPos++] = arr[k];
-    }
-    for (int k = arr.length-1; k >= index; k--) {
+    for (int k = arr.length-1; k >= index; k--) 
       ans[ansPos++] = arr[k];
-    }
     return ans;
   }
 
